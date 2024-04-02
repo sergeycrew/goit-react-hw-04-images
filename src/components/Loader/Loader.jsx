@@ -1,13 +1,15 @@
-import { FallingLines } from 'react-loader-spinner';
+import { MagnifyingGlass } from 'react-loader-spinner';
 
 export const Loader = () => {
   return (
-    <FallingLines
-      color="blue"
+    <MagnifyingGlass
       visible={true}
-      ariaLabel="falling-lines-loading"
-      height={200}
-      width={200}
+      height="120"
+      width="120"
+      ariaLabel="magnifying-glass-loading"
+      wrapperClass="magnifying-glass-wrapper"
+      glassColor="#c0efff"
+      color="blue"
     />
   );
 };
